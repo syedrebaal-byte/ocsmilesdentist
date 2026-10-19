@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { TESTIMONIALS } from '../data/clinicData';
 import { Heart, Sparkles, Smile, Shield, Check, Star } from 'lucide-react';
+import { CLINIC_IMAGES } from '../assets/images';
 
 export const PatientExperience: React.FC = () => {
   const [imgError, setImgError] = useState(false);
@@ -80,7 +81,7 @@ export const PatientExperience: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-stone-200 bg-stone-100 aspect-[4/3] sm:aspect-[1/1] lg:aspect-[4/5] group">
               {!imgError ? (
                 <img
-                  src="/src/assets/images/gentle_family_dentistry_1792425260318.jpg"
+                  src={CLINIC_IMAGES.familyDentistry}
                   alt="Friendly, compassionate pediatric and family dental care at OC Smiles in Orlando"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-102"
                   referrerPolicy="no-referrer"

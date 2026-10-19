@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Award, CheckCircle2, ArrowRight, ShieldCheck, Sparkles, Smile } from 'lucide-react';
 import { CLINIC_DATA } from '../data/clinicData';
+import { CLINIC_IMAGES } from '../assets/images';
 
 interface Props {
   onOpenAppointment: () => void;
@@ -19,7 +20,7 @@ export const InvisalignFeature: React.FC<Props> = ({ onOpenAppointment, onOpenAs
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-stone-200 bg-stone-100 group aspect-[4/3] sm:aspect-[1/1] lg:aspect-[4/5]">
               {!imgError ? (
                 <img
-                  src="/src/assets/images/invisalign_smile_care_1792425259010.jpg"
+                  src={CLINIC_IMAGES.invisalignCare}
                   alt="High precision Invisalign clear aligner held by Dr. Marcia Martinez at OC Smiles"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-102"
                   referrerPolicy="no-referrer"

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Sparkles, Phone, ShieldCheck, MapPin, Award } from 'lucide-react';
 import { CLINIC_DATA } from '../data/clinicData';
+import { CLINIC_IMAGES } from '../assets/images';
 
 interface Props {
   onOpenAppointment: () => void;
@@ -85,7 +86,7 @@ export const HeroSection: React.FC<Props> = ({ onOpenAppointment, onOpenAssessme
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-stone-200 bg-stone-100 group aspect-[16/10] sm:aspect-[16/9] lg:aspect-[4/3]">
               {!imgError ? (
                 <img
-                  src="/src/assets/images/hero_luxury_dental_suite_1792425256930.jpg"
+                  src={CLINIC_IMAGES.heroSuite}
                   alt="OC Smiles modern luxury dental treatment suite overlooking serene courtyard garden in Orlando"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-102"
                   referrerPolicy="no-referrer"

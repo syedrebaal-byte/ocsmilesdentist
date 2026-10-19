@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CLINIC_DATA } from '../data/clinicData';
 import { InteractiveToothModel } from './InteractiveToothModel';
 import { Award, GraduationCap, Heart, Clock, CheckCircle2 } from 'lucide-react';
+import { CLINIC_IMAGES } from '../assets/images';
 
 interface Props {
   onOpenAppointment: () => void;
@@ -35,7 +36,7 @@ export const DoctorBioSection: React.FC<Props> = ({ onOpenAppointment }) => {
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-stone-300 bg-stone-200 aspect-[3/4] max-w-md mx-auto">
               {!imgError ? (
                 <img
-                  src="/src/assets/images/dr_marcia_martinez_portrait_1792425258176.jpg"
+                  src={CLINIC_IMAGES.drPortrait}
                   alt="Dr. Marcia Martinez DMD, Cosmetic and Family Dentist at OC Smiles in Orlando FL"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

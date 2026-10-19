@@ -1,4 +1,5 @@
 import { DentalService, Testimonial, BeforeAfterCase, ClinicDetails } from '../types/dental';
+import { CLINIC_IMAGES } from '../assets/images';
 
 export const CLINIC_DATA: ClinicDetails = {
   name: 'OC Smiles',
@@ -73,7 +74,7 @@ export const CLINIC_SERVICES: DentalService[] = [
     ],
     durationEstimate: 'Typically 6 to 18 months depending on clinical complexity',
     idealFor: 'Adults and teens seeking discreet smile alignment with zero lifestyle compromise.',
-    image: '/src/assets/images/invisalign_smile_care_1792425259010.jpg',
+    image: CLINIC_IMAGES.invisalignCare,
     faqs: [
       {
         question: 'How many hours each day must I wear the aligners?',
@@ -99,7 +100,7 @@ export const CLINIC_SERVICES: DentalService[] = [
     ],
     durationEstimate: 'Usually 2 to 3 visits over a 2–3 week period',
     idealFor: 'Patients wishing to address chips, gaps, severe discoloration, or worn uneven enamel.',
-    image: '/src/assets/images/cosmetic_smile_makeover_1792425259984.jpg',
+    image: CLINIC_IMAGES.cosmeticSmile,
     faqs: [
       {
         question: 'How long do custom porcelain veneers last?',
@@ -125,7 +126,7 @@ export const CLINIC_SERVICES: DentalService[] = [
     ],
     durationEstimate: '45 to 60 minutes for routine preventive visit',
     idealFor: 'Families and individuals dedicated to maintaining healthy teeth and gum foundations.',
-    image: '/src/assets/images/gentle_family_dentistry_1792425260318.jpg',
+    image: CLINIC_IMAGES.familyDentistry,
     faqs: [
       {
         question: 'At what age should children have their first dental visit?',
@@ -151,7 +152,7 @@ export const CLINIC_SERVICES: DentalService[] = [
     ],
     durationEstimate: '60-minute in-office session or 10–14 days for custom take-home kits',
     idealFor: 'Anyone wanting a bright, vibrant boost ahead of weddings, photography, or major events.',
-    image: '/src/assets/images/hero_luxury_dental_suite_1792425256930.jpg',
+    image: CLINIC_IMAGES.heroSuite,
     faqs: [
       {
         question: 'Does professional whitening cause permanent sensitivity?',
@@ -173,7 +174,7 @@ export const CLINIC_SERVICES: DentalService[] = [
     ],
     durationEstimate: '45 to 75 minutes per restoration',
     idealFor: 'Patients needing cavity treatment or replacing older darkened silver amalgam fillings.',
-    image: '/src/assets/images/hero_luxury_dental_suite_1792425256930.jpg',
+    image: CLINIC_IMAGES.heroSuite,
     faqs: [
       {
         question: 'Can I replace my old silver fillings with tooth-colored composite?',
@@ -195,7 +196,7 @@ export const CLINIC_SERVICES: DentalService[] = [
     ],
     durationEstimate: '30 to 60 minutes for initial stabilization',
     idealFor: 'Sudden severe toothaches, chipped or knocked-out teeth, lost crowns, or acute swelling.',
-    image: '/src/assets/images/hero_luxury_dental_suite_1792425256930.jpg',
+    image: CLINIC_IMAGES.heroSuite,
     faqs: [
       {
         question: 'What should I do if a tooth is knocked out?',
